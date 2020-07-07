@@ -32,7 +32,7 @@ describe('AmazonConnection', function () {
         headers: {}
       })
 
-      assert.strictEqual(req.headers.host, 'foo.us-east-1.es.amazonaws.com')
+      assert.strictEqual(req.headers.Host, 'foo.us-east-1.es.amazonaws.com')
     })
 
     it('sets the content-length: 0 header when there is no body', function () {
